@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Note Taker</title>
+    <nav class="navbar navbar-dark bg-primary">
+      <a href="index.html" style="color:aliceblue"><u>Note Taker</u></a>
+    </nav>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style media="screen">
+      body {
+        text-align: center;
+        background-color: white;
+      }
+
+      h1 {
+        font-size: 70px;
+      }
+
+      nav {
+        font-size: 25px;
+      }
+
+      input {
+        width: 500px;
+        height: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        background-color: lightgoldenrodyellow;
+      }
+
+      textarea {
+        width: 500px;
+        height: 125px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 14px;
+        background-color: lightgoldenrodyellow;
+      }
+
+      #userinput {
+        font-size: 20px;
+      }
+
+      #clickbuttons {
+        display: inline-block;
+        margin: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <br />
+    <h1>Note Taker</h1>
+    <br />
+    <br />
+    <div id="userinput">
+      <p>Title</p>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6 offset-md-3 list-container">
+
+            <input type="text" class="note-title" placeholder="Note Title" />
+            <br />
+            <p>Note</p>
+            <textarea class="note-textarea" placeholder="Enter Note Text"></textarea>
+
+<div id="buttons">
+
+          <button class="save-note">Save Note</button>
+        </div>
+        <button class="clearall">Delete All Notes</button>
+      </div>
+
+      <div class="card mt-4">
+          <ul class="list-group"></ul>
+      </div>
+    </div>
+
+    <div id="results"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
