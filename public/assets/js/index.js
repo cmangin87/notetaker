@@ -55,7 +55,7 @@ var renderNoteList = function(notes) {
       "<i class='fas fa-trash-alt float-right text-danger delete-note'>"
     );
 
-    var $noteP = $("<p class='mt-2'>").text(note.text);
+    var $noteP = $("<p class='mt-2'>").text(note.body);
 
     $titleDiv.append($titleSpan, $delBtn);
 
