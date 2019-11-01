@@ -20,4 +20,4 @@ VALUES
   ("Deep Thinking", "Remembered I was never in the Boy Scouts"), 
   ("Google", "how to create smoke signals"),
   ("Recall that Phone & Internet Do Not Work", "Oh yeah."), 
-  ("Reminisce about the Things You Never Got To Do", "Have kids, write that short story, dry clean my suit...")
+  ("Reminisce about the Things You Never Got To Do", "Have kids, write that short story, dry clean my suit...");

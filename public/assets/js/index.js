@@ -8,7 +8,7 @@ var $noteList = $(".list-container .list-group");
 var handleNoteSave = function() {
   var newNote = {
     title: $noteTitle.val(),
-    text: $noteText.val()
+    body: $noteText.val()
   };
 
   $.ajax({

@@ -7,7 +7,9 @@ USE note_db;
 CREATE TABLE notes
 (
   id INT NOT NULL AUTO_INCREMENT,
-  body TEXT NOT NULL,
+  body VARCHAR(255) NOT NULL,
   title VARCHAR(255) NOT NULL,
   PRIMARY KEY(id)
 );
+
+SELECT * FROM notes;

@@ -2,88 +2,58 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8" />
-    <title>Note Taker</title>
-    <nav class="navbar navbar-dark bg-primary">
-      <a href="index.html" style="color:aliceblue"><u>Note Taker</u></a>
-    </nav>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <style media="screen">
-      body {
-        text-align: center;
-        background-color: white;
-      }
-
-      h1 {
-        font-size: 70px;
-      }
-
-      nav {
-        font-size: 25px;
-      }
-
-      input {
-        width: 500px;
-        height: 45px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 20px;
-        background-color: lightgoldenrodyellow;
-      }
-
-      textarea {
-        width: 500px;
-        height: 125px;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 14px;
-        background-color: lightgoldenrodyellow;
-      }
-
-      #userinput {
-        font-size: 20px;
-      }
-
-      #clickbuttons {
-        display: inline-block;
-        margin: 25px;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Notes List</title>
   </head>
-  <body>
-    <br />
-    <br />
-    <h1>Note Taker</h1>
-    <br />
-    <br />
-    <div id="userinput">
-      <p>Title</p>
 
-<div class="container-fluid">
+  <body cz-shortcut-listen="true"></body>
+
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Note Taker </a>
+  </nav>
+  <div class="container-fluid">
     <div class="row">
-        <div class="col-md-6 offset-md-3 list-container">
-
-            <input type="text" class="note-title" placeholder="Note Title" />
-            <br />
-            <p>Note</p>
-            <textarea class="note-textarea" placeholder="Enter Note Text"></textarea>
-
-<div id="buttons">
-
-          <button class="save-note">Save Note</button>
+      <div class="col-md-6 offset-md-3 list-container">
+        <div class="card mt-4">
+          <div class="card-body">
+            <h5 class="card-title">Save a Note</h5>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control note-title"
+                placeholder="Note Title"
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="form-control note-textarea"
+                placeholder="Enter Note Text"
+                rows="3"
+              ></textarea>
+              <button class="btn btn-success mt-4 float-right save-note">
+                Save Note
+              </button>
+            </div>
+          </div>
         </div>
-        <button class="clearall">Delete All Notes</button>
-      </div>
-
-      <div class="card mt-4">
+        <div class="card mt-4">
           <ul class="list-group"></ul>
+        </div>
       </div>
     </div>
-
-    <div id="results"></div>
-    <script src="app.js"></script>
-  </body>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="/assets/js/index.js"></script>
 </html>
